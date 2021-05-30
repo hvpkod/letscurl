@@ -22,7 +22,7 @@ jobs:
     steps:
       - name: Git pull
         run: git pull
-        working-directory: ~/webdev/letscurl/
+        working-directory: /granamyr/webdev/letscurl/
 
       # Runs a single command using the runners shell
       #- name: Run multi.sh
