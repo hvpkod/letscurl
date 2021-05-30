@@ -20,10 +20,14 @@ jobs:
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
-      - uses: actions/checkout@v2
+
       - name: Git pull
-        run: git pull
-        working-directory: /granamyr/webdev/letscurl/
+        - uses: actions/checkout@v2
+        - script: |
+        cd /granamyr/webdev/letscurl/
+        git pull
+        echo 'Done'
+        # working-directory: /granamyr/webdev/letscurl/
 
       # Runs a single command using the runners shell
       #- name: Run multi.sh
