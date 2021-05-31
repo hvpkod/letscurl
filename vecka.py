@@ -10,4 +10,4 @@ sr = br.content
 bf = BeautifulSoup(sr, "html.parser")
 v = int(bf.find("time").text)
 
-os.system("echo %d > vecka/index.html" % v)
+os.system("echo %d > out/vecka" % v)

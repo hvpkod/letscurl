@@ -10,5 +10,4 @@ sr = br.content
 bf = BeautifulSoup(sr, "html.parser")
 v = bf.find("h1").text
 
-# os.system("echo %s > namnsdag/index.html" % v)
-os.system("echo %s > namnsdag" % v)
+os.system("echo %s > out/namnsdag" % v)
