@@ -2,5 +2,5 @@
 
 python namnsdag.py &
 python vecka.py &
-dollar.py &
-euro.py &
+python dollar.py &
+python euro.py &
