@@ -15,4 +15,9 @@ for f in bf.find("center"):
 
 v = list(filter(None, v))
 
-os.system("echo %s > out/tema" % v)
+print(v)
+
+with open("out/tema", "w") as f:
+    for l in v:
+        f.write(l)
+# os.system("echo %s > out/tema" % v)
